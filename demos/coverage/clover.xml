@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1715012736871" clover="3.2.0">
+  <project timestamp="1715012736871" name="All files">
+    <metrics statements="28" coveredstatements="18" conditionals="26" coveredconditionals="10" methods="6" coveredmethods="6" elements="60" coveredelements="34" complexity="0" loc="28" ncloc="28" packages="1" files="3" classes="3"/>
+    <file name="01-sum.js" path="/home/edith/Documentos/personal/courses/testting-js/demos/src/01-sum.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+    </file>
+    <file name="02-math.js" path="/home/edith/Documentos/personal/courses/testting-js/demos/src/02-math.js">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+    </file>
+    <file name="06-person.js" path="/home/edith/Documentos/personal/courses/testting-js/demos/src/06-person.js">
+      <metrics statements="20" coveredstatements="10" conditionals="24" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="10" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="2" type="cond" truecount="4" falsecount="0"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="18" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="20" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="22" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
