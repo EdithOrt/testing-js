@@ -1,0 +1,6 @@
+{
+  "moduleFileExtensions": ["js"],
+  "rootDir": ".",
+  "testEnviroment": "node",
+  "testRegex": ".e2e.js$"
+}
