@@ -30,8 +30,8 @@ describe('Tests for book service', () => {
   describe('Tests for getBooks', () => {
 
     test('should return a books list', async () => {
-      const fakeBooks = generateManyBooks(20)
     // Arrange
+    const fakeBooks = generateManyBooks(20)
       mockSpyGetAll.mockResolvedValue(fakeBooks)
     // Act
     const books = await service.getBooks({})
