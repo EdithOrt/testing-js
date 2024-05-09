@@ -1,9 +1,8 @@
 name: API CI
 #on: [push] // si no es un mono repo
 on:
+  pull_request:
   push:
-    branches:
-      - '**'
     paths:
         -"./api/**"
         -".github/workflows/main.yml"
