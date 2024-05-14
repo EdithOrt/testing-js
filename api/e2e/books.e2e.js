@@ -12,6 +12,7 @@ describe('Test for books', () => {
   let app = null
   let server = null
   let database = null
+
   beforeAll(async() => {
     app = createApp()
     server = app.listen(3003)
@@ -20,11 +21,10 @@ describe('Test for books', () => {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
+
     await client.connect()
     database = client.db(DB_NAME)
   })
-
-
 
 
   afterAll(async () => {
@@ -56,8 +56,8 @@ describe('Test for books', () => {
       .expect(200)
       .then(({body}) => {
 
-        // Assert
-        expect(body.length).toEqual(seedData.insertedCount)
+      // Assert
+      expect(body.length).toEqual(seedData.insertedCount)
       })
     });
   });
