@@ -3,10 +3,6 @@ const BooksService = require("./books.service")
 
 const mockSpyGetAll = jest.fn();
 
-const MongoLibStub = {
-  getAll: mockSpyGetAll,
-  create: () => {}
-}
 
 jest.mock("../lib/mongo.lib", () => {
   return jest.fn().mockImplementation(() => {
