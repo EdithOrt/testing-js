@@ -1,15 +1,16 @@
 name: API CI
 #on: [push] // si no es un mono repo
 on:
-  pull_request:
   push:
+    branches:
+      - '**'
     paths:
-        -"./api/**"
-        -".github/workflows/main.yml"
+        - "./api/**"
+        - ".github/workflows/api-ci.yml"
 
 defaults:
   run:
-  working-directory: ./api
+    working-directory: ./api
 
 jobs:
   unit-test:
