@@ -1,14 +1,11 @@
 describe('set describe', () => {
   beforeAll(() => {
-    console.log("before all")
   })
 
   afterAll(() => {
-    console.log("after all")
   })
 
   beforeEach(() => {
-    console.log("before each")
   })
 
   test('case 1', () => {

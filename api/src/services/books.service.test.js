@@ -35,7 +35,6 @@ describe('Tests for book service', () => {
       mockSpyGetAll.mockResolvedValue(fakeBooks)
     // Act
     const books = await service.getBooks({})
-    console.log(books)
     // Assert
     expect(books.length).toEqual(fakeBooks.length)
     expect(mockSpyGetAll).toHaveBeenCalled()

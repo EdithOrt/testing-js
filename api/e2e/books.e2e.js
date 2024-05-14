@@ -49,14 +49,12 @@ describe('Test for books', () => {
         year: 1945,
         author: 'Anna Purna'
       }])
-      console.log(seedData)
 
       // Act
       return request(app)
       .get('/api/v1/books')
       .expect(200)
       .then(({body}) => {
-        console.log(body)
 
         // Assert
         expect(body.length).toEqual(seedData.insertedCount)
