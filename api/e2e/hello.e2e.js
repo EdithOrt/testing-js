@@ -5,6 +5,7 @@ const createApp = require('../src/app')
 describe('Test for hello endpoint', () => {
   let app = null
   let server = null
+
   beforeAll(() => {
     app = createApp()
     server = app.listen(3001)

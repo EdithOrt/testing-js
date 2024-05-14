@@ -12,19 +12,19 @@ describe('Test for books', () => {
   let app = null
   let server = null
   let database = null
+
   beforeAll(async() => {
     app = createApp()
-    server = app.listen(3001)
+    server = app.listen(3003)
     const client = new MongoClient(
       MONGO_URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
+
     await client.connect()
     database = client.db(DB_NAME)
   })
-
-
 
 
   afterAll(async () => {
@@ -49,17 +49,15 @@ describe('Test for books', () => {
         year: 1945,
         author: 'Anna Purna'
       }])
-      console.log(seedData)
 
       // Act
       return request(app)
       .get('/api/v1/books')
       .expect(200)
       .then(({body}) => {
-        console.log(body)
 
-        // Assert
-        expect(body.length).toEqual(seedData.insertedCount)
+      // Assert
+      expect(body.length).toEqual(seedData.insertedCount)
       })
     });
   });
